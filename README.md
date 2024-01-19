@@ -15,17 +15,10 @@ Update 3.1:
   - Gestire il bug che porta a non selezionare correttamente il range da copiare quando si importa un ordine cliente su una nuova fornitura 
 
   Features da aggiungere:
-  - Sheet con gli idnirizzi fisici dei clienti
+  - Sheet con gli indirizzi fisici dei clienti
   - Routine per la creazione in automatico della proforma
   - Creare un nuovo pulsante nel pannello di controllo "Nuovo Ordine Negozi". Essendo l'ordine dei negozi più grande e non necessitando di proforma deve avere un layout diverso.
   - Rimodulare il layour del "moduloOrdineMagazzino" in maniera dale che:
       - Chi fa l'ordine (Davide e Lorenzo) possano vedere le quantità in stock del prodotto in questione
       - Eliminare il merge delle celle titolo di categoria
-
-
-
-Le principali features da aggiungere alla 3.0 breve sono:
-
-- Uno sheet con il database degli indirizzi fisici dei clienti dove spedire la merce. Gli indirizzi servono per compilare la proforma in automatico.
-- Rifare il pulsante "aggiungi a fornitura" con l'utilizzo di una shape dato che il pulsante a controllo active x dà problemi con excel 2007
-- Scrivere la sub routine per creare le proforma in automatico partendo dall'ordine. La proforma deve essere salvata come file esterno indipendente facilmente.
+  - Pulsante salva e chiudi una fornitura. Permette il salvataggio delle forniture per avere dati storici sugli acquisti, prezzi ecc ecc. Inoltre permetterebbe di creare il link tra SKU Coppo e Sku Anker.
