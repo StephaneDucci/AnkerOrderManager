@@ -3,7 +3,7 @@ Un file excel per la gestione delle forniture Anker e la vendita ai clienti Copp
 
 
 PROPOSTE DARIO
-- Arrotondare i prezzi delle bottiglie:
+- Arrotondare i prezzi delle bottiglie (con prezzo superiore ai 10€):
   - da 0,96 a 0,50 -----> 0,5
   - da 0,51 a 0,95 -----> 0,95
 Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più).
