@@ -1,6 +1,22 @@
 # AnkerOrderManager
 Un file excel per la gestione delle forniture Anker e la vendita ai clienti Coppo.
 
+
+PROPOSTE DARIO
+- Arrotondare i prezzi delle bottiglie:
+  - da 0,96 a 0,50 -----> 0,5
+  - da 0,51 a 0,95 -----> 0,95
+Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più).
+Su 1.000 bottiglie sono 250€ in più.
+Su 10.000 bottiglie sono 2.500€ in più 
+
+
+OBIETTIVI PIENAMENTE RAGGIUNTI ALLA 3.2
+- Creazione in maniera rapida dei listini necessari per richiedere gli ordini ai clienti e ai nostri negozi.
+- Registrazione degli ordini ricevuti dai clienti
+
+
+
 Update 3.2
 
 Fixed Bugs
