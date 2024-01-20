@@ -9,7 +9,11 @@ Fixed Bugs
 
 Features Deployed
 - Creare un nuovo pulsante nel pannello di controllo "Nuovo Ordine Negozi". Essendo l'ordine dei negozi più grande e non necessitando di proforma deve avere un layout diverso.
-- Eliminare il merge delle celle titolo di categoria
+- Eliminare il merge delle celle titolo di categoria nel listone magazzino
+
+Other
+- Fatta pulizia tra i named ranges (sarà da verificare se ne verranno ricreati altri)
+- piccole ottimizzazione negli scripts
 
   
 Update 3.1:
@@ -29,7 +33,7 @@ Update 3.1:
   - Sheet con gli indirizzi fisici dei clienti
   - Routine per la creazione in automatico della proforma
   FATTO - Creare un nuovo pulsante nel pannello di controllo "Nuovo Ordine Negozi". Essendo l'ordine dei negozi più grande e non necessitando di proforma deve avere un layout diverso.
-  - Rimodulare il layour del "moduloOrdineMagazzino" in maniera dale che:
+  - Rimodulare il layout del "moduloOrdineMagazzino" in maniera dale che:
       - Chi fa l'ordine (Davide e Lorenzo) possano vedere le quantità in stock del prodotto in questione (DIFFICILE DA IMPLEMENTARE SERVIREBBE UN DATASET CON GLI INCROCI TRA GLI SKU COPPO E QUELLI ANKER)
       FATTO - Eliminare il merge delle celle titolo di categoria
   - Pulsante salva e chiudi una fornitura. Permette il salvataggio delle forniture per avere dati storici sugli acquisti, prezzi ecc ecc. Inoltre permetterebbe di creare il link tra SKU Coppo e Sku Anker.
