@@ -18,7 +18,10 @@ OBIETTIVI PIENAMENTE RAGGIUNTI ALLA 3.2
 OBIETTIVI ANCORA DA RAGGIUNGERE
 - Test prolungato dell'applicazione
 - Aggiunta di un sistema per la gestione delle disponibilità e adeguamento degli ordini a queste
-
+- Creazione di relazione tra anker sku e geko sku
+- Invio mail automatiche
+- Completamento della black list (cecilia's list) con più referenze possibili da eliminare
+- Capire se i liquori misti sono da includere o meno nel listino da proporre alle enoteche/grossisti (ai negozi vanno sicuramente proposti)
 
 
 Update 3.2
