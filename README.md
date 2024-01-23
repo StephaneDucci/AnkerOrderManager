@@ -22,6 +22,7 @@ OBIETTIVI ANCORA DA RAGGIUNGERE
 - Invio mail automatiche
 - Completamento della black list (cecilia's list) con più referenze possibili da eliminare
 - Capire se i liquori misti sono da includere o meno nel listino da proporre alle enoteche/grossisti (ai negozi vanno sicuramente proposti)
+- Nel modulo cliente aggiungere una colonna con il prezzo di costo. In maniera tale che quando si calcola l'ordine aggregato si sa già quanto si andrà a spendere.
 
 
 Update 3.2
