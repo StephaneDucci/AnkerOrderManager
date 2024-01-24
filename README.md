@@ -10,6 +10,11 @@ Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più)
 Su 1.000 bottiglie sono 250€ in più.
 Su 10.000 bottiglie sono 2.500€ in più 
 
+V3.3 BUG FIXES 
+- Aggiunto il filtro per i prodotti non available in powerquery.
+- Corretti il "modulo cliente" e il "modulo negozi" per tenere conto dei prezzi di acquisto piuttosto che dei prezzi di vendita.
+- Corretti il "modulo cliente" e il "modulo negozi" in modo tale che gli ordini vengano inseriti con il conteggio delle bottiglie e non dei cartoni.
+
 
 OBIETTIVI PIENAMENTE RAGGIUNTI ALLA 3.2
 - Creazione in maniera rapida dei listini necessari per richiedere gli ordini ai clienti e ai nostri negozi.
