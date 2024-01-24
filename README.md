@@ -10,6 +10,19 @@ Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più)
 Su 1.000 bottiglie sono 250€ in più.
 Su 10.000 bottiglie sono 2.500€ in più 
 
+V3.5
+- aggiungere la gestione del post ordine
+- la gestione delle disponibilità delle bottigli ordinate
+- la creazione di proforma
+- il salvataggio dei dati dell'intero processo in un grande database per fini di data analysis
+
+V3.4 NEW FEATURES
+- eliminate le schede dei clienti.
+- eliminate il modulo negozi
+- ora tutti gli ordini si gestiscono dal modulo cliente che verra rinominato "Order Manager" da cui sarà possibilie salvare, caricare modificare ordini sia di clienti che dei negozi.
+- aggiunte nuove colonne nel modulo cliente per tenere traccia delle referenze ordinate e di quelle veramente disponibili
+- aggiunto un "trova lo sku vinolux" per facilitare l'abbinamento dello sku vinolux e quindi il prezzo del concorrente
+
 V3.3 BUG FIXES 
 - Aggiunto il filtro per i prodotti non available in powerquery.
 - Corretti il "modulo cliente" e il "modulo negozi" per tenere conto dei prezzi di acquisto piuttosto che dei prezzi di vendita.
