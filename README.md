@@ -10,18 +10,26 @@ Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più)
 Su 1.000 bottiglie sono 250€ in più.
 Su 10.000 bottiglie sono 2.500€ in più 
 
-V3.5
+V3.5 TO DO LIST
 - aggiungere la gestione del post ordine
 - la gestione delle disponibilità delle bottigli ordinate
-- la creazione di proforma
-- il salvataggio dei dati dell'intero processo in un grande database per fini di data analysis
+- implementazione di email automatiche per la gestione del rapporto con i clienti
 
 V3.4 NEW FEATURES
 - eliminate le schede dei clienti.
 - eliminate il modulo negozi
-- ora tutti gli ordini si gestiscono dal modulo cliente che verra rinominato "Order Manager" da cui sarà possibilie salvare, caricare modificare ordini sia di clienti che dei negozi.
-- aggiunte nuove colonne nel modulo cliente per tenere traccia delle referenze ordinate e di quelle veramente disponibili
+- ora tutti gli ordini si gestiscono dal modulo cliente che verra rinominato "ORDER FORM" da cui sarà possibilie salvare, caricare, modificare ordini sia di clienti che dei negozi.
+- Creato un "dbOrdini" ossia un grande dataset dove vengono registrati tutti gli ordini.
+  - Ogni record del dataset rappresenta una referenza ordinata da uno dei nostri clienti o dai negozi Coppo.
+  - Ogni record ha specifici campi per l'identificazione e l'associazione al corretto cliente e alla corretta fornitura
+  - Alle forniture è stato associato un dodice riconoscitivo del tipo MMMYY
+  - Il dataset che si verrà così a formare sarà utile per fare delle analisi su: PRODOTTI, CLIENTI, INCROCIO PREZZI FORNITORI ESTERI E NAZIONALI
 - aggiunto un "trova lo sku vinolux" per facilitare l'abbinamento dello sku vinolux e quindi il prezzo del concorrente
+- Aggiunti tutta una serie di piccole features per rendere l'esperienza utente più fluida:
+  - select distinct dei clienti sulla base della fornitura selezionata
+  - pulsanti: REIMPOSTA FORMULE, CLIENTI, SHOW STORICO
+- Implementata la generazione di proforma (ancora in test)
+- Creato un pulsante per generare un backup del dbOrdini
 
 V3.3 BUG FIXES 
 - Aggiunto il filtro per i prodotti non available in powerquery.
