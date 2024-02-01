@@ -10,16 +10,35 @@ Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più)
 Su 1.000 bottiglie sono 250€ in più.
 Su 10.000 bottiglie sono 2.500€ in più 
 
+V4.0
+- implementazione di email automatiche per la gestione del rapporto con i clienti
+
+V3.6
+- aggiungere la gestione del post ordine
+- la gestione delle disponibilità delle bottigli ordinate
+
 V3.5 TO DO LIST
+DONE:
 - in ORDER FORM sostituire la colonna TOTAL con:
   - TOTAL COSTO ANKER
   - TOTAL COSTO IMPORT
   - TOTAL PREZZO VENDITA
-- aggiungere la gestione del post ordine
-- la gestione delle disponibilità delle bottigli ordinate
-- implementazione di email automatiche per la gestione del rapporto con i clienti
+- Eliminati altri bug minori:
+  - Arrotondamento scorretto nel calcolo del prezzo nelle proforme e nell'ORDER FORM. Ora si segue il metodo di calcolo utilizzato nello sheet LISTONE
+  - Prima del salvataggio rimozione di filtri e righe nascoste in ORDER FORM
+  - Proforma automatica sempre in fase di test ma corretti ancora alcuni piccoli dettagli
+- Aggiunti 3 sheet per l'analisi dati:
+  - ANALISI FORNITURA
+    - Utile per avere alcune insights sulla fornitura nel suo complesso. Dovrebbe dare un stima ESATTA del totale della proforma Anker
+  - ANALISI ORDINI
+    - Per vedere a colpo d'occhio la situazione degli ordini.
+  - ANALISI PRODOTTI
+    - Da vedere se utili. L'idea è capire quali sono i prodotti più richiesti e di quale categoria appartengono
+  - DAA CALCULATOR (è solo un'idea)
+    - Per creare in automatico il DAA in entrata in uscita?
 
-V3.4 NEW FEATURES
+
+V3.4
 - eliminate le schede dei clienti.
 - eliminate il modulo negozi
 - ora tutti gli ordini si gestiscono dal modulo cliente che verra rinominato "ORDER FORM" da cui sarà possibilie salvare, caricare, modificare ordini sia di clienti che dei negozi.
