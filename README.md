@@ -11,6 +11,10 @@ Su 1.000 bottiglie sono 250€ in più.
 Su 10.000 bottiglie sono 2.500€ in più 
 
 V3.5 TO DO LIST
+- in ORDER FORM sostituire la colonna TOTAL con:
+  - TOTAL COSTO ANKER
+  - TOTAL COSTO IMPORT
+  - TOTAL PREZZO VENDITA
 - aggiungere la gestione del post ordine
 - la gestione delle disponibilità delle bottigli ordinate
 - implementazione di email automatiche per la gestione del rapporto con i clienti
