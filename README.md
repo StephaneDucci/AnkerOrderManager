@@ -17,7 +17,7 @@ V3.6
 - aggiungere la gestione del post ordine
 - la gestione delle disponibilità delle bottigli ordinate
 
-V3.5 TO DO LIST
+V3.5
 DONE:
 - in ORDER FORM sostituire la colonna TOTAL con:
   - TOTAL COSTO ANKER
@@ -36,8 +36,12 @@ DONE:
     - Da vedere se utili. L'idea è capire quali sono i prodotti più richiesti e di quale categoria appartengono
   - DAA CALCULATOR (è solo un'idea)
     - Per creare in automatico il DAA in entrata in uscita?
+IN TEST
+- Aggiunto il blocco dello sheet ORDER FORM per evitare che un utente lo modifichi e lo rompa.
+- Sono state quindi sbloccate tutte le celle di cui l'utente ha bisogno per effettuare il data entry.
+- DA VERIFICARE CHE TUTTE LE MACRO E IL CODICE VBA NON SI SCONTRI CON IL BLOCCO. IN QUEL CASO O SI SBLOCCANO LE CELLE CHE INTERAGISCONO CON IL CODICE VBA O AGGIUNGERE NEL CODICE VBA LO SBLOCCO DEL FOGLIO E IL RIBLOCCO.
 
-
+  
 V3.4
 - eliminate le schede dei clienti.
 - eliminate il modulo negozi
