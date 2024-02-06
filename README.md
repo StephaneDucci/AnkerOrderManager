@@ -14,6 +14,9 @@ V4.0
 - implementazione di email automatiche per la gestione del rapporto con i clienti
 
 V3.6
+DONE
+- Aggiunta la possibilità di modificare e salvare un ordine anche in modalità "CONCLUSO"
+TO DO
 - aggiungere la gestione del post ordine
 - la gestione delle disponibilità delle bottigli ordinate
 
