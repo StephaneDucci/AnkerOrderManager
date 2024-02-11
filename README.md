@@ -1,24 +1,32 @@
 # AnkerOrderManager
 Un file excel per la gestione delle forniture Anker e la vendita ai clienti Coppo.
+Facilita la registrazione degli ordini dei clienti
+Crea un dataset con gli ordini che permette uno studio sui dati storici.
 
 
-PROPOSTE DARIO
-- Arrotondare i prezzi delle bottiglie (con prezzo superiore ai 10€):
-  - da 0,96 a 0,50 -----> 0,5
-  - da 0,51 a 0,95 -----> 0,95
-Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più).
-Su 1.000 bottiglie sono 250€ in più.
-Su 10.000 bottiglie sono 2.500€ in più 
+
 
 V4.0
+TO DO
 - implementazione di email automatiche per la gestione del rapporto con i clienti
+
+
+V3.8
+- Eliminato il dataset datiPostVendita. Compensato dall'aggiunta allo storicoOrdini di due colonne: CATEGORIA COPPO, DATA. Con questa modifica il dataset dbOrdini è completo e sarà possibile estrapolare qualsiasi informazione relativi alle forniture e ai sotto ordini.
+- Tutta la parte post vendita è stata riorganizzata in maniera tale da risultare più facile da consultare. Sono stati infatti aggiunti dei pulsanti per muoversi tra le tabelle e i grafici. Le pagine risultano ora chiare.
+- Tutte le tabelle pivot ora si riferiscono al dataset dbOrdini.
+
+V3.7
+- Aggiunta la possibilità di selezionare la modalità di caricamento dei dati:
+    - A = Dati presi dal listone in corso
+    - B = Dati presi dallo storico degli ordini
+- Rimosso lo sheet "listaCecila" e "listaCategorie" che vengono sostituite da "listeSpeciali". Lo sheet è stato messo in ordine e risulta quindi per un utente terzo intervenire anche su queste liste.
 
 V3.6
 DONE
 - Aggiunta la possibilità di modificare e salvare un ordine anche in modalità "CONCLUSO"
-TO DO
-- aggiungere la gestione del post ordine
-- la gestione delle disponibilità delle bottigli ordinate
+- Aggiunta la gestione del post ordine
+- Gestione delle disponibilità delle bottiglie ordinate
 
 V3.5
 DONE:
@@ -98,8 +106,12 @@ Other
   
 STILL TO BE FIXED AND IMPROVED:
   - Sheet con gli indirizzi fisici dei clienti
-  - Nuovo modello proforma
-  - Routine per la creazione in automatico della proforma
   - Chi fa l'ordine (Davide e Lorenzo) possano vedere le quantità in stock del prodotto in questione (DIFFICILE DA IMPLEMENTARE SERVIREBBE UN DATASET CON GLI INCROCI TRA GLI SKU COPPO E QUELLI ANKER)
-  - Pulsante salva e chiudi una fornitura. Permette il salvataggio delle forniture per avere dati storici sugli acquisti, prezzi ecc ecc. Inoltre permetterebbe di creare il link tra SKU Coppo e Sku Anker.
-  - Eliminare i named range che non hanno scope workbook che vengono creati ogni qual volta si duplica un sheet.
+
+PROPOSTE DARIO
+- Arrotondare i prezzi delle bottiglie (con prezzo superiore ai 10€):
+  - da 0,96 a 0,50 -----> 0,5
+  - da 0,51 a 0,95 -----> 0,95
+Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più).
+Su 1.000 bottiglie sono 250€ in più.
+Su 10.000 bottiglie sono 2.500€ in più 
