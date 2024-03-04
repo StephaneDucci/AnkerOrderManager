@@ -18,5 +18,11 @@ CREAZIONE DEI LISTONI PER: negozi, enoteche e grossisti
     - Controllare che non ci siano dei doppioni che lo script non riesce a identificare (referenza che sono uguali ma che hanno nome diverso. Es. Jack Daniel's - Jack Daniels. La mancanza dell'apostrofo rende le referenze per lo script diverse quando
 in realtà sono le stesse). Eliminare queste referenze dalla scheda MODULO ORDINE e solo poi avvia la procedura per creare i listoni grossisti e enoteche.
     - Eliminare manualmente del tutto la categoria LIQUORI MISTI dal listone enoteche e grossisti (mantenerla per i negozi Coppo)
-
     - Modificare il piè di pagina
+
+INVIO MAIL AI CLIENTI
+La lista delle mail dei clienti si trova nella scheda "elencoMail". E' possibile filtrare tra enoteche e grossisti.
+Il messaggio è standard e può essere trovato nelle vecchie mail salvata su Thunderbird
+La mail va indirizzata a info@coppo1896.com con CCN le mail dei clienti. E' possibile mettere al massimo una centinaio di CCN alla volta quindi sarà necessario mandare più di una mail.
+Alle enoteche andrà mandato il listino specifico per le enoteche ai grossisti quello per i grossisti.
+Alcuni clienti preferiscono il file in formato excel, per convenienza si possono inviare entrambi i formati (xlsx, pdf)
