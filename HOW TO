@@ -6,13 +6,17 @@ INSERIMENTO DATI DEL NUOVO LISTINO ANKER.
   - Aprire l'Anker Manager e lanciare Excel e poi Power Query.
   - Cambiare la fonte di dati relativa al listino Anker selezionando il listino aggiornato
   - Aggiornare le queries e il lavoro è fatto
-- Possibili problematiche possono essere dovute al fatto che il listino Anker cambi di formato (per esempio venga rimossa o aggiunta una colonna), in tal caso la query creata per la lettura automatica dei dati fallirebbe. Qualora quindi vi trovaste di fronte a un errore di questo genere è necessario confrontare un vecchio listino con quello appena uscito e vedere se ci sono delle differenze. A quel punto sarà necessario eliminare tali differenze e ricondurre il listino alla versione per cui la query è stata studiata.
+- Possibili problematiche possono essere dovute al fatto che il listino Anker cambi di formato (per esempio venga rimossa o aggiunta una colonna), in tal caso la query creata per la lettura automatica dei dati fallirebbe. 
+Qualora quindi vi trovaste di fronte a un errore di questo genere è necessario confrontare un vecchio listino con quello appena uscito e vedere se ci sono delle differenze. A quel punto sarà necessario eliminare tali differenze e 
+ricondurre il listino alla versione per cui la query è stata studiata.
 
 CREAZIONE DEI LISTONI PER: negozi, enoteche e grossisti
 -Basterà seguire la procedura del foglio LISTONE per effettuare la pulizia corretta. Ricordarsi:
   - Effettuare più volte la pulizia (CLEAN) per eliminare tutte le referenze.
   - Sarà cmq sempre necessario un controlla manuale per:
     - Controllare che non ci siano nuovi SKU da inserire nella BLACK LIST
-    - Controllare che non ci siano dei doppioni che lo script non riesce a identificare (referenza che sono uguali ma che hanno nome diverso. Es. Jack Daniel's - Jack Daniels. La mancanza dell'apostrofo rende le referenze per lo script diverse quando in realtà sono le stesse)
+    - Controllare che non ci siano dei doppioni che lo script non riesce a identificare (referenza che sono uguali ma che hanno nome diverso. Es. Jack Daniel's - Jack Daniels. La mancanza dell'apostrofo rende le referenze per lo script diverse quando
+in realtà sono le stesse). Eliminare queste referenze dalla scheda MODULO ORDINE e solo poi avvia la procedura per creare i listoni grossisti e enoteche.
     - Eliminare manualmente del tutto la categoria LIQUORI MISTI dal listone enoteche e grossisti (mantenerla per i negozi Coppo)
+
     - Modificare il piè di pagina
