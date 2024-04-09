@@ -1,117 +1,73 @@
-# AnkerOrderManager
-Un file excel per la gestione delle forniture Anker e la vendita ai clienti Coppo.
-Facilita la registrazione degli ordini dei clienti
-Crea un dataset con gli ordini che permette uno studio sui dati storici.
+AnkerOrderManager
 
+An Excel file for managing Anker supplies and sales to Coppo customers. Facilitates the registration of customer orders. Creates a dataset with orders allowing for historical data analysis.
 
+V4.0 TO DO
 
-
-V4.0
-TO DO
-- implementazione di email automatiche per la gestione del rapporto con i clienti
-
+Implementation of automatic emails for managing customer relations.
 
 V3.8
-- Eliminato il dataset datiPostVendita. Compensato dall'aggiunta allo storicoOrdini di due colonne: CATEGORIA COPPO, DATA. Con questa modifica il dataset dbOrdini è completo e sarà possibile estrapolare qualsiasi informazione relativi alle forniture e ai sotto ordini.
-- Tutta la parte post vendita è stata riorganizzata in maniera tale da risultare più facile da consultare. Sono stati infatti aggiunti dei pulsanti per muoversi tra le tabelle e i grafici. Le pagine risultano ora chiare.
-- Tutte le tabelle pivot ora si riferiscono al dataset dbOrdini.
+
+Deleted the "datiPostVendita" dataset. Compensated by adding two columns to "storicoOrdini": COPPO CATEGORY, DATE. With this modification, the "dbOrdini" dataset is complete and it will be possible to extract any information regarding supplies and sub-orders. The post-sales part has been reorganized to be easier to consult. Buttons have been added to navigate between tables and charts. The pages are now clearer. All pivot tables now refer to the "dbOrdini" dataset.
 
 V3.7
-- Aggiunta la possibilità di selezionare la modalità di caricamento dei dati:
-    - A = Dati presi dal listone in corso
-    - B = Dati presi dallo storico degli ordini
-- Rimosso lo sheet "listaCecila" e "listaCategorie" che vengono sostituite da "listeSpeciali". Lo sheet è stato messo in ordine e risulta quindi per un utente terzo intervenire anche su queste liste.
 
-V3.6
-DONE
-- Aggiunta la possibilità di modificare e salvare un ordine anche in modalità "CONCLUSO"
-- Aggiunta la gestione del post ordine
-- Gestione delle disponibilità delle bottiglie ordinate
+Added the possibility to select the data loading mode:
+A = Data taken from the current list
+B = Data taken from the order history
+Removed the "listaCecila" and "listaCategorie" sheets, replaced by "listeSpeciali". The sheet has been organized, making it easier for a third-party user to intervene on these lists.
 
-V3.5
-DONE:
-- in ORDER FORM sostituire la colonna TOTAL con:
-  - TOTAL COSTO ANKER
-  - TOTAL COSTO IMPORT
-  - TOTAL PREZZO VENDITA
-- Eliminati altri bug minori:
-  - Arrotondamento scorretto nel calcolo del prezzo nelle proforme e nell'ORDER FORM. Ora si segue il metodo di calcolo utilizzato nello sheet LISTONE
-  - Prima del salvataggio rimozione di filtri e righe nascoste in ORDER FORM
-  - Proforma automatica sempre in fase di test ma corretti ancora alcuni piccoli dettagli
-- Aggiunti 3 sheet per l'analisi dati:
-  - ANALISI FORNITURA
-    - Utile per avere alcune insights sulla fornitura nel suo complesso. Dovrebbe dare un stima ESATTA del totale della proforma Anker
-  - ANALISI ORDINI
-    - Per vedere a colpo d'occhio la situazione degli ordini.
-  - ANALISI PRODOTTI
-    - Da vedere se utili. L'idea è capire quali sono i prodotti più richiesti e di quale categoria appartengono
-  - DAA CALCULATOR (è solo un'idea)
-    - Per creare in automatico il DAA in entrata in uscita?
-IN TEST
-- Aggiunto il blocco dello sheet ORDER FORM per evitare che un utente lo modifichi e lo rompa.
-- Sono state quindi sbloccate tutte le celle di cui l'utente ha bisogno per effettuare il data entry.
-- DA VERIFICARE CHE TUTTE LE MACRO E IL CODICE VBA NON SI SCONTRI CON IL BLOCCO. IN QUEL CASO O SI SBLOCCANO LE CELLE CHE INTERAGISCONO CON IL CODICE VBA O AGGIUNGERE NEL CODICE VBA LO SBLOCCO DEL FOGLIO E IL RIBLOCCO.
+V3.6 DONE
 
-  
+Added the ability to modify and save an order even in "COMPLETED" mode. Added post-order management. Management of ordered bottle availability.
+
+V3.5 DONE
+
+In the ORDER FORM, replaced the TOTAL column with:
+TOTAL ANKER COST
+TOTAL IMPORT COST
+TOTAL SELLING PRICE
+Eliminated other minor bugs:
+Incorrect rounding in price calculation in pro forma and ORDER FORM. Now follows the calculation method used in the LISTONE sheet. Before saving, remove filters and hidden rows in ORDER FORM. Automatic pro forma still in testing phase but still some small details corrected. Added 3 sheets for data analysis:
+SUPPLY ANALYSIS
+Useful for having some insights into the supply as a whole. Should give an EXACT estimate of the total Anker pro forma.
+ORDERS ANALYSIS
+To see at a glance the order situation.
+PRODUCTS ANALYSIS
+To see if useful. The idea is to understand which products are most requested and which category they belong to.
+DAA CALCULATOR (just an idea)
+To automatically create the DAA in and out? IN TEST Added sheet locking for ORDER FORM to prevent a user from modifying and breaking it. All cells needed for data entry by the user have been unlocked. TO VERIFY THAT ALL MACROS AND VBA CODE DO NOT CONFLICT WITH THE LOCK. IN THAT CASE, EITHER UNLOCK THE CELLS THAT INTERACT WITH THE VBA CODE OR ADD IN THE VBA CODE THE UNLOCKING OF THE SHEET AND RELOCKING IT.
+
 V3.4
-- eliminate le schede dei clienti.
-- eliminate il modulo negozi
-- ora tutti gli ordini si gestiscono dal modulo cliente che verra rinominato "ORDER FORM" da cui sarà possibilie salvare, caricare, modificare ordini sia di clienti che dei negozi.
-- Creato un "dbOrdini" ossia un grande dataset dove vengono registrati tutti gli ordini.
-  - Ogni record del dataset rappresenta una referenza ordinata da uno dei nostri clienti o dai negozi Coppo.
-  - Ogni record ha specifici campi per l'identificazione e l'associazione al corretto cliente e alla corretta fornitura
-  - Alle forniture è stato associato un dodice riconoscitivo del tipo MMMYY
-  - Il dataset che si verrà così a formare sarà utile per fare delle analisi su: PRODOTTI, CLIENTI, INCROCIO PREZZI FORNITORI ESTERI E NAZIONALI
-- aggiunto un "trova lo sku vinolux" per facilitare l'abbinamento dello sku vinolux e quindi il prezzo del concorrente
-- Aggiunti tutta una serie di piccole features per rendere l'esperienza utente più fluida:
-  - select distinct dei clienti sulla base della fornitura selezionata
-  - pulsanti: REIMPOSTA FORMULE, CLIENTI, SHOW STORICO
-- Implementata la generazione di proforma (ancora in test)
-- Creato un pulsante per generare un backup del dbOrdini
 
-V3.3 BUG FIXES 
-- Aggiunto il filtro per i prodotti non available in powerquery.
-- Corretti il "modulo cliente" e il "modulo negozi" per tenere conto dei prezzi di acquisto piuttosto che dei prezzi di vendita.
-- Corretti il "modulo cliente" e il "modulo negozi" in modo tale che gli ordini vengano inseriti con il conteggio delle bottiglie e non dei cartoni.
+Eliminated customer tabs. Eliminated the store module. Now all orders are managed by the customer module, which will be renamed "ORDER FORM" from which it will be possible to save, load, and modify orders both for customers and stores. Created a "dbOrders", a large dataset where all orders are recorded. Each record in the dataset represents a reference ordered by one of our customers or Coppo stores. Each record has specific fields for identification and association with the correct customer and correct supply. Each supply has been assigned a distinctive code of the type MMMYY. The dataset thus formed will be useful for analysis on: PRODUCTS, CUSTOMERS, CROSS PRICES FOREIGN AND NATIONAL SUPPLIERS added a "find vinolux sku" block to facilitate matching the vinolux sku and therefore the competitor's price Added a series of small features to make the user experience smoother: select distinct customers based on the selected supply buttons: RESET FORMULAS, CUSTOMERS, SHOW HISTORY Implemented pro forma generation (still in test) Created a button to generate a backup of dbOrders
 
+V3.3 BUG FIXES
 
-OBIETTIVI PIENAMENTE RAGGIUNTI ALLA 3.2
-- Creazione in maniera rapida dei listini necessari per richiedere gli ordini ai clienti e ai nostri negozi.
-- Registrazione degli ordini ricevuti dai clienti
+Added filter for products not available in power query. Corrected the "customer module" and the "store module" to take into account purchase prices rather than selling prices. Corrected the "customer module" and the "store module" so that orders are entered with the count of bottles rather than cartons.
 
-OBIETTIVI ANCORA DA RAGGIUNGERE
-- Test prolungato dell'applicazione
-- Aggiunta di un sistema per la gestione delle disponibilità e adeguamento degli ordini a queste
-- Creazione di relazione tra anker sku e geko sku
-- Invio mail automatiche
-- Completamento della black list (cecilia's list) con più referenze possibili da eliminare
-- Capire se i liquori misti sono da includere o meno nel listino da proporre alle enoteche/grossisti (ai negozi vanno sicuramente proposti)
-- Nel modulo cliente aggiungere una colonna con il prezzo di costo. In maniera tale che quando si calcola l'ordine aggregato si sa già quanto si andrà a spendere.
+Fully Achieved Objectives by 3.2
 
+Quick creation of the necessary price lists to request orders from customers and our stores. Recording orders received from customers
+
+Objectives Yet to Be Achieved
+
+Extended testing of the application Addition of a system for managing availability and adapting orders to these Creating a relationship between Anker sku and Geko sku Automatic email sending Completion of the blacklist (Cecilia's list) with as many references as possible to be eliminated Understanding whether mixed spirits should be included in the price list to be proposed to wine shops/wholesalers (they should definitely be proposed to stores) In the customer module, add a column with the cost price. So that when calculating the aggregated order, you already know how much you will spend.
 
 Update 3.2
 
 Fixed Bugs
-- Eliminare ogni doppione presente nel listone! I doppioni rendono il cerca verticale con il nome della referenza inefficace!
-- Gestire il bug che porta a non selezionare correttamente il range da copiare quando si importa un ordine cliente su una nuova fornitura 
+
+Eliminate every duplicate present in the list! Duplicates make vertical search by reference name ineffective! Handle the bug that leads to not correctly selecting the range to copy when importing a customer order on a new supply.
 
 Features Deployed
-- Creare un nuovo pulsante nel pannello di controllo "Nuovo Ordine Negozi". Essendo l'ordine dei negozi più grande e non necessitando di proforma deve avere un layout diverso.
-- Eliminare il merge delle celle titolo di categoria nel listone magazzino
+
+Create a new button in the control panel "New Store Order". Being the store order larger and not requiring a pro forma, it must have a different layout. Eliminate the merging of category title cells in the warehouse list.
 
 Other
-- Fatta pulizia tra i named ranges (sarà da verificare se ne verranno ricreati altri)
-- piccole ottimizzazione negli scripts
 
-  
+Cleanup among named ranges (will need to verify if others will be recreated) small optimizations in scripts
+
 STILL TO BE FIXED AND IMPROVED:
-  - Sheet con gli indirizzi fisici dei clienti
-  - Chi fa l'ordine (Davide e Lorenzo) possano vedere le quantità in stock del prodotto in questione (DIFFICILE DA IMPLEMENTARE SERVIREBBE UN DATASET CON GLI INCROCI TRA GLI SKU COPPO E QUELLI ANKER)
 
-PROPOSTE DARIO
-- Arrotondare i prezzi delle bottiglie (con prezzo superiore ai 10€):
-  - da 0,96 a 0,50 -----> 0,5
-  - da 0,51 a 0,95 -----> 0,95
-Aumento medio del prezzo delle bottiglie di 25 centesimi (1,1% di media in più).
-Su 1.000 bottiglie sono 250€ in più.
-Su 10.000 bottiglie sono 2.500€ in più 
+Sheet with physical addresses of customers. Those who place the order (Davide and Lorenzo) should be able to see the stock quantities of the product in question (DIFFICULT TO IMPLEMENT WOULD REQUIRE A DATASET WITH THE CROSS REFERENCES BETWEEN COPPO SKUs AND ANKER SKUs).
