@@ -1,27 +1,25 @@
 AnkerOrderManager
 
-An Excel file for managing Anker supplies and sales to Coppo customers. Facilitates the registration of customer orders. Creates a dataset with orders allowing for historical data analysis.
+An Excel file used for managing order supplies made to a foreigner supplier and the sales of the same goods to the Italian market. 
+Previous to this file everything was made with one stand alone spreadsheet difficult to handle. Years of data were useless because they were scattered on several files and organized in inconsistent ways.
+This files try to patch up this problem. It is an imperfect DIY solution but that at least tries to introduce a data driven approach to an obsolete business procedure that has been shrinking in volumes for years.
 
-V4.0 TO DO
-
-Implementation of automatic emails for managing customer relations.
-
-V3.8
+V3.8 (ACTUAL VERSION)
 
 Deleted the "datiPostVendita" dataset. Compensated by adding two columns to "storicoOrdini": COPPO CATEGORY, DATE. With this modification, the "dbOrdini" dataset is complete and it will be possible to extract any information regarding supplies and sub-orders. The post-sales part has been reorganized to be easier to consult. Buttons have been added to navigate between tables and charts. The pages are now clearer. All pivot tables now refer to the "dbOrdini" dataset.
 
 V3.7
 
 Added the possibility to select the data loading mode:
-A = Data taken from the current list
-B = Data taken from the order history
+A = Data (prices) taken from the current supplier's offerlist
+B = Data (prices) taken from the dbOrdini historic dataset
 Removed the "listaCecila" and "listaCategorie" sheets, replaced by "listeSpeciali". The sheet has been organized, making it easier for a third-party user to intervene on these lists.
 
 V3.6 DONE
 
 Added the ability to modify and save an order even in "COMPLETED" mode. Added post-order management. Management of ordered bottle availability.
 
-V3.5 DONE
+V3.5
 
 In the ORDER FORM, replaced the TOTAL column with:
 TOTAL ANKER COST
@@ -54,18 +52,13 @@ Objectives Yet to Be Achieved
 
 Extended testing of the application Addition of a system for managing availability and adapting orders to these Creating a relationship between Anker sku and Geko sku Automatic email sending Completion of the blacklist (Cecilia's list) with as many references as possible to be eliminated Understanding whether mixed spirits should be included in the price list to be proposed to wine shops/wholesalers (they should definitely be proposed to stores) In the customer module, add a column with the cost price. So that when calculating the aggregated order, you already know how much you will spend.
 
-Update 3.2
+V3.2
 
 Fixed Bugs
-
 Eliminate every duplicate present in the list! Duplicates make vertical search by reference name ineffective! Handle the bug that leads to not correctly selecting the range to copy when importing a customer order on a new supply.
-
 Features Deployed
-
 Create a new button in the control panel "New Store Order". Being the store order larger and not requiring a pro forma, it must have a different layout. Eliminate the merging of category title cells in the warehouse list.
-
 Other
-
 Cleanup among named ranges (will need to verify if others will be recreated) small optimizations in scripts
 
 STILL TO BE FIXED AND IMPROVED:
